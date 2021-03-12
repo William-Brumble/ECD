@@ -1,0 +1,4 @@
+/*
+The component within a node that transmits and receives unconnected explicit messages
+and sends them directly to the Message Router object
+*/
