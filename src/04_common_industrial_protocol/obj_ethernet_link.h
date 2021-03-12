@@ -1,0 +1,4 @@
+#ifndef OBJ_ETHERNET_LINK_H
+#define OBJ_ETHERNET_LINK_H
+
+#endif /* OBJ_ETHERNET_LINK_H */

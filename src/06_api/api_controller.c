@@ -1,4 +1,5 @@
+#include "api_controller.h"
 
-api_controller() {
+int api_controller() {
     return 0;
 }

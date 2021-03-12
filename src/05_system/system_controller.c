@@ -1,4 +1,6 @@
+#include "system_controller.h"
+#include "data_types.h"
 
-system_controller() {
+int system_controller() {
     return 0;
 }

@@ -1,4 +1,5 @@
+#include "serial_controller.h"
 
-serial_controller() {
+int serial_controller() {
     return 0;
 }

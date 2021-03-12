@@ -1,4 +1,5 @@
+#include "eip_controller.h"
 
-eip_controller() {
+int eip_controller() {
     return 0;
 }

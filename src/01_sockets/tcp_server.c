@@ -1,3 +1,5 @@
+#include "tcp_server.h"
+
 #include <stdio.h>
 #include <poll.h>
 #include <sys/epoll.h>
@@ -16,7 +18,7 @@
 #define MAXLINE 4096 // Max text line length.
 #define INFTIM (-1) //  Infinite poll timeout.
 
-int test (){
+void test (){
     int i;  // Used as an iterator.
     int maxi = 0;   // Contains the largest index of the client array currently in use.
     int listenfd; //

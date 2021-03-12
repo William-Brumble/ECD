@@ -1,3 +1,5 @@
+#include "common_services.h"
+
 void cip_get_attributes_all () {
 
 }
