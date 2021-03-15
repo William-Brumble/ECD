@@ -6,6 +6,18 @@
 #include "obj_tcp_ip_interface.h"
 #include "obj_unconnected_message_manager.h"
 
-int cip_controller() {
+int
+cip_controller()
+{
+    /* If this is the first time running, let's initialize. */
+	if(four_first_scan == 1)
+	{
+		/* Change variable to indicate program has been ran */
+		four_first_scan = 0;
+
+		/* Perform first time running layer one initialization */
+		if(four_initialize() == -1) { return -1; }
+	}
+
     return 0;
 }

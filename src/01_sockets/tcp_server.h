@@ -1,6 +1,6 @@
 #ifndef TCP_SERVER_H
 #define TCP_SERVER_H
 
-void test(void);
+int one_tcp_controller();
 
 #endif /* TCP_SERVER_H */

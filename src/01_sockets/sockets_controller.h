@@ -22,4 +22,22 @@ char *one_recv_buff_two;
 char *one_recv_buff_three;
 char *one_recv_buff_four;
 
+/* Buffers for sending data down from layer two to layer one. */
+extern char *two_send_buff_one;
+extern char *two_send_buff_two;
+extern char *two_send_buff_three;
+extern char *two_send_buff_four;
+
+/* Buffers for sending data up from layer one to layer two. */
+extern char *two_recv_buff_one;
+extern char *two_recv_buff_two;
+extern char *two_recv_buff_three;
+extern char *two_recv_buff_four;
+
+/* Receives data from layer two buffer. */
+int one_pull_lyr_two_data();
+
+/* Sends data to layer two buffers. */
+int one_send_lyr_two_data();
+
 #endif /* SOCKET_CONTROLLER_H */
