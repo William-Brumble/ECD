@@ -1,0 +1,71 @@
+/* eip header command field options */
+enum command_field {
+    com_nop                     = 0x0000,   // TCP
+    com_list_services           = 0x0004,   // BOTH
+    com_list_identity           = 0x0063,   // BOTH
+    com_list_interfaces         = 0x0064,   // BOTH
+    com_register_session        = 0x0065,   // TCP
+    com_unregister_session      = 0x0066,   // TCP
+    com_send_rr_data            = 0x006f,   // TCP
+    com_send_unit_data          = 0x0070,   // TCP
+};
+
+/* eip header length field options */
+enum length_field {
+    len_nop                     = 0x0000,
+    len_list_services           = 0x0000,
+    len_list_identity           = 0x0000,
+    len_list_interfaces         = 0x0000,
+    len_register_session        = 0x0004,
+    len_unregister_session      = 0x0000,
+};
+int16_t len_send_rr_data;                   // Value Varies
+int16_t len_send_unit_data;                 // Value Varies
+
+/* eip header session handle field options */
+int32_t ses_session_handle      = 0x00000001;
+
+/* eip header status field options */
+int32_t sta_status = 0x00000000;
+
+/* eip header sender context field options */
+// NOP, chosen by sender
+// ListServices, chosen by sender
+// ListInterfaces, chosen by sender
+// RegisterSession, chosen by sender
+
+// ListIdentity, first uint defines MaxResponseDelay in milliseconds, remaining 6 usint = 0
+// UnRegisterSession, session handle
+
+int8_t sen_sender_context_one;              // Value Varies
+int8_t sen_sender_context_two;              // Value Varies
+int8_t sen_sender_context_thr;              // Value Varies
+int8_t sen_sender_context_fou;              // Value Varies
+int8_t sen_sender_context_fiv;              // Value Varies
+int8_t sen_sender_context_six;              // Value Varies
+int8_t sen_sender_context_sev;              // Value Varies
+int8_t sen_sender_context_eig;              // Value Varies
+
+/* eip header options field options */
+int32_t opt_option = 0x00000000; // When sending requests, the option field is always 0.
+
+/* buffer for storing eip header */
+int8_t eip_header_buffer[24];
+
+struct cpf_item {
+    int16_t type_id;                        // Type of item encapsulated
+    int16_t length;                         // Length in bytes of the Data Field
+};
+int8_t cpf_data;                            // Value Varies
+
+enum type_id_field {
+    address                     = 0x0000,
+    list_identity_response      = 0x000c,
+    connection_based            = 0xa1,
+    connected_transport         = 0x00b1,
+    unconnected_message         = 0x00b2,
+    list_services_response      = 0x0100,
+    sockaddr_info_ott           = 0x8000,
+    sockaddr_info_tto           = 0x8001,
+    sequenced_address           = 0x8002,
+};
