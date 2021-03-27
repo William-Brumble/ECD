@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(eip_testframwork)
+project(eip_testframework)
 
 set(listIdentity_files
 	eip_listIdentity.c
@@ -60,14 +60,14 @@ set(output_source_files
     eip_testFramework_controller.c
     eip_testFramework_controller.h
 )
-add_executable(eip_testframwork ${output_source_files})
+add_executable(eip_testframework ${output_source_files})
 
-target_link_libraries(eip_testframwork listIdentity)
-target_link_libraries(eip_testframwork listInterfaces)
-target_link_libraries(eip_testframwork listServices)
-target_link_libraries(eip_testframwork nop)
-target_link_libraries(eip_testframwork registerSession)
-target_link_libraries(eip_testframwork sendRrData)
-target_link_libraries(eip_testframwork sendUnitData)
-target_link_libraries(eip_testframwork testFrameworkServer)
-target_link_libraries(eip_testframwork unregisterSession)
+target_link_libraries(eip_testframework listIdentity)
+target_link_libraries(eip_testframework listInterfaces)
+target_link_libraries(eip_testframework listServices)
+target_link_libraries(eip_testframework nop)
+target_link_libraries(eip_testframework registerSession)
+target_link_libraries(eip_testframework sendRrData)
+target_link_libraries(eip_testframework sendUnitData)
+target_link_libraries(eip_testframework testFrameworkServer)
+target_link_libraries(eip_testframework unregisterSession)

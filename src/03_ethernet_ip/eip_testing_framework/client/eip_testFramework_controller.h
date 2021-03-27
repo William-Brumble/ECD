@@ -2,6 +2,7 @@
 #define EIP_TESTFRAMEWORKCONTROLLER
 
 #include <string.h>
+#include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 
@@ -12,5 +13,6 @@ int input_comparer; // Used to select user input command.
 struct eip_header input_structure;
 int32_t session_handle;
 int8_t sender_context[8] = {5,6,7,8,9,8,7,6};
+_Bool send_via_broadcast = 0;
 
 #endif /* EIP_TESTFRAMEWORKCONTROLLER */

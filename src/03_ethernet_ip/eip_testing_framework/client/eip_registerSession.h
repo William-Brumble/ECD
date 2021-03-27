@@ -2,6 +2,7 @@
 #define EIP_REGISTERSESSION
 
 #include <stdint.h>
+#include <stdio.h>
 #include "eip_dataTypes.h"
 
 void

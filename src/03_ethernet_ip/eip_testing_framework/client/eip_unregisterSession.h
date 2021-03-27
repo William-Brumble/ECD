@@ -2,6 +2,7 @@
 #define EIP_UNREGISTERSESSION
 
 #include "eip_dataTypes.h"
+#include <stdio.h>
 #include <stdint.h>
 
 void

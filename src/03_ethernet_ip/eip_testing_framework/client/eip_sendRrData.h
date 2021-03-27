@@ -2,6 +2,7 @@
 #define EIP_SENDRRDATA
 
 #include "eip_dataTypes.h"
+#include <stdio.h>
 #include <stdint.h>
 
 void

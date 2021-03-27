@@ -50,11 +50,16 @@ main(int argc, char *argv[])
     if(strcmp(argv[1], "sendunitdata") == 0)             {input_comparer = 7;}
     if(strcmp(argv[1], "unregistersession") == 0)        {input_comparer = 8;}
 
+	session_handle = 0x00000001;
     /* Select command based on parsed input command */
     switch(input_comparer)
     {
         case 1:
-            //request_list_identity();
+            request_list_identity(&input_structure,
+								  &session_handle,
+								  &send_via_broadcast,
+								  &our_socket,
+								  send_buff);
             break;
         case 2:
             //request_list_interfaces();
@@ -85,4 +90,5 @@ main(int argc, char *argv[])
             printf("Invalid input command specified.\n");
             exit(0);
     }
+	free(send_buff);
 }

@@ -2,6 +2,7 @@
 #define EIP_LISTSERVICES
 
 #include <stdint.h>
+#include <stdio.h>
 #include "eip_dataTypes.h"
 
 void

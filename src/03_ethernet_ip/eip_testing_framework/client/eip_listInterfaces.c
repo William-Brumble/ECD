@@ -8,11 +8,6 @@ request_list_interfaces(struct eip_header input_structure,
                         int32_t session_handle,
                         int8_t sender_context[8])
 {
-    printf("Request list interface function called.\n");
-
-
-
-
     input_structure.command = 0x0064;                       // Hard coded
     input_structure.length = 0;                             // Hard coded
     input_structure.session_handle = session_handle;        // Ignored by target
