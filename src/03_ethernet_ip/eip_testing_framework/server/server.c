@@ -34,9 +34,14 @@ int main()
       printf("Error\n");
     /*---- Accept call creates a new socket for the incoming connection ----*/
     addr_size = sizeof serverStorage;
-    newSocket = accept(welcomeSocket, (struct sockaddr *) &serverStorage, &addr_size);
     for(;;){
-
+    	newSocket = accept(welcomeSocket, (struct sockaddr *) &serverStorage, &addr_size);
+		recv(newSocket, buffer, 24, 0);
+		for(int i = 0; i < 24; i++)
+		{
+			printf("%02X ", buffer[i]);
+		}
+		printf("\n");
     }
     return 0;
 }

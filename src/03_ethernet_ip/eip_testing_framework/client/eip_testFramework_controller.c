@@ -62,10 +62,18 @@ main(int argc, char *argv[])
 								  send_buff);
             break;
         case 2:
-            //request_list_interfaces();
+            request_list_interfaces(&input_structure,
+									&session_handle,
+									&sender_context[0],
+									&our_socket,
+									send_buff);
             break;
         case 3:
-            //request_list_interfaces();
+            request_list_services(&input_structure,
+								  &session_handle,
+								  &sender_context[0],
+								  &our_socket,
+								  send_buff);
             break;
         case 4:
             send_request_nop(&input_structure,
@@ -75,16 +83,23 @@ main(int argc, char *argv[])
                              send_buff);
             break;
         case 5:
+			// Requires command specific data.
             //request_register_session();
             break;
         case 6:
+			// Requires command specific data.
             //request_send_rr_data();
             break;
         case 7:
-            //prequest_send_unit_data();
+			// Requires command specific data.
+            //request_send_unit_data();
             break;
         case 8:
-            //request_unregister_session();
+            request_unregister_session(&input_structure,
+									   &session_handle,
+									   &sender_context[0],
+									   &our_socket,
+									   send_buff);
             break;
         default:
             printf("Invalid input command specified.\n");

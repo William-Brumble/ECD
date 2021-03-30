@@ -4,22 +4,22 @@
  * The optional List Interfaces command shall be used by a connection originator
  * to identify non-CIP communication interfaces associated with the target. */
 void
-request_list_interfaces(struct eip_header input_structure,
-                        int32_t session_handle,
-                        int8_t sender_context[8])
+request_list_interfaces(struct eip_header *input_structure,
+                        int32_t *session_handle,
+                        int8_t *sender_context,
+						int32_t *clientSocket,
+						char *send_buff)
 {
-    input_structure.command = 0x0064;                       // Hard coded
-    input_structure.length = 0;                             // Hard coded
-    input_structure.session_handle = session_handle;        // Ignored by target
-    input_structure.status = 0;                             // Hard coded
-    /* Sender context chosen by sender */                   //    ---
-    input_structure.sender_context[0] = sender_context[0];  //     |
-    input_structure.sender_context[1] = sender_context[1];  //     |
-    input_structure.sender_context[2] = sender_context[2];  //     |
-    input_structure.sender_context[3] = sender_context[3];  //     |
-    input_structure.sender_context[4] = sender_context[4];  //     |
-    input_structure.sender_context[5] = sender_context[5];  //     |
-    input_structure.sender_context[6] = sender_context[6];  //     |
-    input_structure.sender_context[7] = sender_context[7];  //    ---
-    input_structure.options = 0;                            // Hard coded
+    input_structure->command = 0x0064;                  	 // Hard coded
+    input_structure->length = htons(0x0000);                 // Hard coded
+    input_structure->session_handle = *session_handle;       // Ignored by targ
+    input_structure->status = htonl(0x00000000);             // Hard coded
+    /* Sender context chosen by sender */               
+	for(int i = 0; i < 8; i++)
+	{
+		input_structure->sender_context[i] = sender_context[i];
+	}
+    input_structure->options = htonl(0x00000000);             // Hard coded
+	memcpy(send_buff, input_structure, 24);
+	send(*clientSocket, send_buff, 24, 0);
 }
