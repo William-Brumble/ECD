@@ -1,0 +1,140 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "eip_testframework",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "eip_testframework::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eip_testframework-Debug-1a7d8749147820139d06.json",
+					"name" : "eip_testframework",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "listIdentity::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-listIdentity-Debug-d43fa62515aaf0789c0a.json",
+					"name" : "listIdentity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "listInterfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-listInterfaces-Debug-a12448b194d7be3fa18b.json",
+					"name" : "listInterfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "listServices::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-listServices-Debug-8a9998d77364cd1d7a47.json",
+					"name" : "listServices",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nop-Debug-f3be422ce8a71276578e.json",
+					"name" : "nop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "registerSession::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-registerSession-Debug-d895558e39772640d4d7.json",
+					"name" : "registerSession",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sendRrData::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sendRrData-Debug-e514554669a7577c7f27.json",
+					"name" : "sendRrData",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sendUnitData::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sendUnitData-Debug-f2e27d296adbda682528.json",
+					"name" : "sendUnitData",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testFrameworkServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testFrameworkServer-Debug-53ea049444b053d75d1b.json",
+					"name" : "testFrameworkServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unregisterSession::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unregisterSession-Debug-116d0c8263b090f9bf5a.json",
+					"name" : "unregisterSession",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug",
+		"source" : "C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

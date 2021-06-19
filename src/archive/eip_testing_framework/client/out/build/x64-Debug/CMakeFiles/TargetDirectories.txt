@@ -1,0 +1,12 @@
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/sendRrData.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/listIdentity.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/listInterfaces.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/sendUnitData.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/listServices.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/nop.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/registerSession.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/testFrameworkServer.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/unregisterSession.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/eip_testframework.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/wbrum/Desktop/ECD/src/archive/eip_testing_framework/client/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
